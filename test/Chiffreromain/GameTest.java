@@ -72,4 +72,40 @@ class GameTest {
 		assertEquals("XXXIV", Gm.play(34));
 	}
 
+	@Test
+	void Iter9() {
+		assertEquals(Gm.play(100), "C");
+	}
+
+	@Test
+	void Iter10() {
+		assertEquals(Gm.play(2000), "MM");
+	}
+
+	// nexttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+	@Test
+	void Iter11() {
+		assertEquals(Gm.play(1994), "MCMXCIV");
+	}
+
+	@Test
+	void Iter12() {
+		assertEquals(Gm.play(2024), "MMXXIV");
+	}
+
+	@Test
+	void Iter13() {
+		assertEquals(Gm.play(3999), "MMMCMXCIX");
+	}
+
+	@Test
+	void Iter14() {
+		assertEquals(Gm.play(58), "LVIII");
+	}
+
+	@Test
+	void Iter15() {
+		assertEquals(Gm.play(648), "DCXLVIII");
+	}
+
 }
