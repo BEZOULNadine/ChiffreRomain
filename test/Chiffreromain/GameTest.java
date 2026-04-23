@@ -52,4 +52,14 @@ class GameTest {
 		assertEquals(Gm.play(4), "IV");
 	}
 
+	@Test
+	void Iter6() {
+		assertEquals(Gm.play(5), "V");
+	}
+
+	@Test
+	void Iter7() {
+		assertEquals(Gm.play(9), "IX");
+	}
+
 }

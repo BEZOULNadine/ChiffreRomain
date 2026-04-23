@@ -1,17 +1,28 @@
 package Chiffreromain;
 
 public class Game {
-	String mot = "";
 
 	public String play(int nombre) {
+		String mot = "";
 		if (nombre > 3999 || nombre <= 0) {
 			throw new IllegalArgumentException("Nombre invalide" + nombre);
 		}
 		if (nombre == 4) {
-			return "IV";
+			mot += "IV";
+			nombre -= 4;
 		}
-		for (int i = 0; i < nombre; i++) {
+		if (nombre == 5) {
+			mot += "V";
+			nombre -= 5;
+		}
+		if (nombre == 9) {
+			mot += "IX";
+			nombre -= 9;
+		}
+
+		while (nombre >= 1) {
 			mot += "I";
+			nombre--;
 
 		}
 		return mot;
