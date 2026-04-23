@@ -7,6 +7,10 @@ public class Game {
 		if (nombre > 3999 || nombre <= 0) {
 			throw new IllegalArgumentException("Nombre invalide" + nombre);
 		}
+		while (nombre >= 10) {
+			mot += "X";
+			nombre -= 10;
+		}
 		if (nombre == 4) {
 			mot += "IV";
 			nombre -= 4;

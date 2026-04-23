@@ -62,4 +62,14 @@ class GameTest {
 		assertEquals(Gm.play(9), "IX");
 	}
 
+	@Test
+	void dix_donne_X() {
+		assertEquals("XI", Gm.play(11));
+	}
+
+	@Test
+	void trente_donne_XXX() {
+		assertEquals("XXXIV", Gm.play(34));
+	}
+
 }
