@@ -19,4 +19,16 @@ class GameTest {
 		;
 	}
 
+	@Test
+	void Iter2() {
+		assertEquals(Gm.play(2), "II");
+		;
+	}
+
+	@Test
+	void Iter3() {
+		assertEquals(Gm.play(3), "III");
+		;
+	}
+
 }
