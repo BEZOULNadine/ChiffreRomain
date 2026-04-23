@@ -32,19 +32,24 @@ class GameTest {
 	@Test
 	void Iter4_1() {
 		assertThrows(IllegalArgumentException.class, () -> Gm.play(0));
-		;
+
 	}
 
 	@Test
 	void Iter4_2() {
 		assertThrows(IllegalArgumentException.class, () -> Gm.play(-1));
-		;
+
 	}
 
 	@Test
 	void Iter4_3() {
 		assertThrows(IllegalArgumentException.class, () -> Gm.play(50000));
-		;
+
+	}
+
+	@Test
+	void Iter5() {
+		assertEquals(Gm.play(4), "IV");
 	}
 
 }
