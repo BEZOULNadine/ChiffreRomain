@@ -1,6 +1,6 @@
 package Chiffreromain;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,8 +14,9 @@ class GameTest {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void Iter1() {
+		assertEquals(Gm.play(1), "I");
+		;
 	}
 
 }
